@@ -1,5 +1,6 @@
 package jp.ac.it_college.std.s23018.messageboard.infrastructure.database.dao
 
+import org.jetbrains.exposed.dao.Entity
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
