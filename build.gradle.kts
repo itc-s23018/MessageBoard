@@ -1,23 +1,23 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id("org.springframework.boot") version "3.3.0"
     id("io.spring.dependency-management") version "1.1.5"
     kotlin("jvm") version "1.9.24"
     kotlin("plugin.spring") version "1.9.24"
+    kotlin("plugin.serialization") version "1.9.24"
 }
 
-group = "jp.ac.it_college.std.s23018.message.board"
+group = "jp.ac.it_college.std.s23018.messageboard"
 version = "0.0.1-SNAPSHOT"
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+    sourceCompatibility = JavaVersion.VERSION_21
 }
 
 repositories {
     mavenCentral()
 }
-
 val exposedVersion : String by project
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
@@ -34,10 +34,10 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-
 kotlin {
     compilerOptions {
         freeCompilerArgs.addAll("-Xjsr305=strict")
+        jvmTarget = JvmTarget.JVM_21
     }
 }
 
