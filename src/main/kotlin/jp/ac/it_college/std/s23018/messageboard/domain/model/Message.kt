@@ -4,7 +4,7 @@ import kotlinx.datetime.LocalDateTime
 import java.util.Date
 
 data class Message(
-    val id: Long,
+    val id: Long = 0,
     val threadId: Long?,
     val userId: Long?,
     val message: String,

@@ -9,11 +9,9 @@ class ThreadEntity(id: EntityID<Long>) : LongEntity(id) {
 
     var title by ThreadTable.title
     var userId by ThreadTable.userId
-    var createdAt by ThreadTable.createdAt
+    var createdAt  by ThreadTable.createdAt
     var updatedAt by ThreadTable.updatedAt
     var deleted by ThreadTable.deleted
 
-    override fun toString() = """
-        ThreadEntity(id=$id, title=$title, userId=$userId, createdAt=$createdAt, updatedAt=$updatedAt, deleted=$deleted)
-    """.trimIndent()
+
 }

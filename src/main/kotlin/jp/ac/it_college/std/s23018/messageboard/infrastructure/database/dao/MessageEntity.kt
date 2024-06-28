@@ -14,7 +14,5 @@ class MessageEntity(id: EntityID<Long>) : LongEntity(id) {
     var updated by MessageTable.updated
     var deleted by MessageTable.deleted
 
-    override fun toString() = """
-        MessageEntity(id = $id, threadId = $threadId, userId = $userId, message = $message, posted = $posted, updated = $updated, deleted = $deleted)
-    """.trimIndent()
+
 }
