@@ -9,11 +9,6 @@ class UserEntity(id: EntityID<Long>) : LongEntity(id) {
     companion object : LongEntityClass<UserEntity>(UserTable)
 
     var viewName by UserTable.viewName
-    val email by UserTable.email
-    val password by UserTable.password
-
-
-    override fun toString() = """
-    UserEntity(id=$id, viewName=$viewName, email=$email, password=$password)
-    """.trimIndent()
+    var email by UserTable.email
+    var password by UserTable.password
 }
