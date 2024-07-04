@@ -1,6 +1,5 @@
 package jp.ac.it_college.std.s23018.messageboard.presentaion.from
 
-import jp.ac.it_college.std.s23018.messageboard.domain.model.Thread
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.Serializable
 

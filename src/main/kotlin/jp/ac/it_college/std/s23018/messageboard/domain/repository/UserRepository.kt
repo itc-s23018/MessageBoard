@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface UserRepository {
     fun save(user:User)
-    fun find(viewName: String): User?
+    fun findByViewName(viewName: String):User?
 }

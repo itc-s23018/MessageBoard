@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service
 class AuthenticationService(
     private val userRepository: UserRepository
 ) {
-    fun findUser(email: String): User? {
-        return userRepository.findByUsername(email)
+    fun findUserByViewName(viewName: String): User? {
+        return userRepository.findByViewName(viewName)
     }
 }
